@@ -1,0 +1,30 @@
+{
+  "resources/js/app.js": {
+    "dynamicImports": [
+      "resources/js/bootstrap.js"
+    ],
+    "file": "assets/app-4478bca4.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  },
+  "resources/js/bootstrap.js": {
+    "file": "assets/bootstrap-1db06013.js",
+    "isDynamicEntry": true,
+    "src": "resources/js/bootstrap.js"
+  },
+  "resources/js/language.js": {
+    "file": "assets/language-10390b81.js",
+    "isEntry": true,
+    "src": "resources/js/language.js"
+  },
+  "resources/sass/app.scss": {
+    "file": "assets/app-50e571c6.css",
+    "isEntry": true,
+    "src": "resources/sass/app.scss"
+  },
+  "resources/sass/components/core/menu-builder.scss": {
+    "file": "assets/menu-builder-97b93a36.css",
+    "isEntry": true,
+    "src": "resources/sass/components/core/menu-builder.scss"
+  }
+}

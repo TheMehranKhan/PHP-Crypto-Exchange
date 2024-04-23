@@ -1,0 +1,19 @@
+{
+  "name": "trongried",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gettransactionTrx.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "http": "^0.0.1-security",
+    "ioredis": "^4.28.5",
+    "pm2": "^5.2.0",
+    "trongrid": "^1.2.6",
+    "tronweb": "^4.1.0"
+  }
+}

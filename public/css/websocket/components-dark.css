@@ -1,0 +1,587 @@
+.trade-topBar-component {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    background: #17181e;
+    padding: .5rem;
+    gap: .5rem;
+}
+/* trade-topBar end */
+/* trade-chart-controller */
+.trade-chart-controller {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background: #17181e;
+}
+.trade-chart-controller .head {
+    border-bottom: 1px solid #363841;
+    padding: 0 0.5rem;
+}
+.trade-chart-controller .chart-controller {
+    width: 100%;
+    height: 596px;
+    background: #17181e;
+    max-height: 596px;
+}
+/* end trade-chart-controller */
+
+/* tab-controller */
+.tab-controller {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+}
+.tab-controller .tab {
+    font-size: 14px;
+    color: #848d9c;
+    padding: 0.5rem;
+    border-bottom: 0.15rem solid transparent;
+    cursor: pointer;
+    font-family: IRANSansX, BoldF !important;
+    transition: 0.6s;
+}
+.tab-controller .tab:hover {
+    opacity: 0.8;
+}
+.tab-controller .tab.active {
+    color: #eba319;
+    border-bottom: 0.15rem solid #eba319;
+}
+
+
+/* order book */
+.order-book-screen-controller {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background: #17181e;
+    overflow: hidden;
+}
+.order-book-screen-controller .sort-item {
+    padding: 0.3rem;
+    cursor: pointer;
+    transition: 0.6s;
+    transition: 0.6s;
+}
+.order-book-screen-controller .sort-item:hover {
+    opacity: 0.8;
+}
+.order-book-screen-controller .sort-item.active {
+    background: #363841;
+}
+.order-book-screen-controller .sort-item img {
+    width: 25px;
+}
+.order-book-screen-controller .order-book-controller {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.3rem;
+    margin-top: 1.4rem;
+    max-height: 700px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.order-book-screen-controller .order-book-controller .order-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.3rem 0.5rem;
+    position: relative;
+}
+.order-book-screen-controller .order-book-controller .order-line span {
+    position: relative;
+    z-index: 2;
+    line-height: 1.5;
+}
+.order-book-screen-controller .order-book-controller .order-line.sell .line, .order-book-screen-controller .order-book-controller .order-line.buy .line {
+    background: #281c21;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 30%;
+    z-index: 1;
+    top: 0;
+}
+.order-book-screen-controller .order-book-controller .order-line.buy .line {
+    background: #192524;
+}
+
+.history-screen-controller {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background: #17181e;
+    overflow: hidden;
+    margin-top: 0.3rem;
+    padding: 0.5rem;
+}
+.history-screen-controller .p-datatable .p-column-header-content {
+    color: #848d9c !important;
+}
+.history-screen-controller .p-datatable .p-datatable-thead > tr > th, .history-screen-controller .p-datatable .p-datatable-tbody > tr > td {
+    border: none !important;
+}
+
+
+.empty-table-component-controller {
+    display: flex;
+    flex-wrap: wrap;
+    padding:1rem;
+    height:220px;
+    gap: .5rem !important;
+    font-size: 17px;
+}
+
+
+/* order form */
+.trade-spot-form-controller {
+    background: #23242a;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0.8rem;
+    gap: 1.5rem;
+    height: 100%;
+}
+.trade-spot-form-controller .trade-switch-btn button {
+    background: #363841;
+    color: #fff;
+    font-family: IRANSansX, BoldF !important;
+}
+.trade-spot-form-controller .trade-submit-btn {
+    background: #363841 !important;
+    color: #fff !important;
+    padding: 0.5rem 0.5rem 0.8rem;
+}
+.trade-spot-form-controller .slider-controller {
+    width: 100%;
+    position: relative;
+    padding: 0 1rem;
+}
+.trade-spot-form-controller .vue-slider-marks {
+    background: #363841;
+}
+.trade-spot-form-controller .p-inputtext, .trade-spot-form-controller .p-inputgroup-addon, .p-dropdown .p-dropdown-trigger ,  .p-dropdown   {
+    background: #363841 !important;
+    box-shadow: none !important;
+}
+.trade-spot-form-controller .vue-slider-mark-step {
+    box-shadow: none !important;
+}
+.trade-spot-form-controller .vue-slider-ltr .vue-slider-mark {
+    width: 8px !important;
+    height: 2px !important;
+}
+.trade-spot-form-controller .vue-slider-mark-step-active {
+    border-color: #848d9c !important;
+}
+.trade-spot-form-controller .vue-slider-dot-handle {
+    width: 15px !important;
+    height: 15px !important;
+    border: 4px solid #848d9c !important;
+    top: -2px;
+}
+.trade-spot-form-controller .vue-slider-process {
+    background-color: #848d9c !important;
+}
+.trade-spot-form-controller .vue-slider, .trade-spot-form-controller .p-inputnumber {
+    width: 100% !important;
+}
+.trade-spot-form-controller .vue-slider-ltr .vue-slider-mark-step, .trade-spot-form-controller .vue-slider-rtl .vue-slider-mark-step {
+    width: 13px !important;
+    height: 13px !important;
+    display: block;
+    background-color: #000 !important;
+    transform: rotate(45deg);
+    top: -5px !important;
+    left: -5px !important;
+    border: 3px solid #363841 !important;
+    border-radius: 50% !important;
+}
+.trade-spot-form-controller .vue-slider-rail {
+    padding: auto 2rem;
+}
+.trade-spot-form-controller .vue-slider-mark:first-child .vue-slider-mark-step, .trade-spot-form-controller .vue-slider-mark:last-child .vue-slider-mark-step {
+    display: block !important;
+}
+.trade-spot-form-controller .balance-controller {
+    padding: 1rem 0;
+}
+.trade-spot-form-controller .balance-controller p {
+    display: flex;
+    justify-content: space-between;
+}
+.trade-spot-form-controller .slider-control span {
+    background: transparent !important;
+    border-color: transparent !important;
+}
+.trade-spot-form-controller .vue-slider-dot-tooltip-inner {
+    position: relative;
+    right: 3px;
+}
+.trade-spot-form-controller .vue-slider.vue-slider-ltr .vue-slider-rail .vue-slider-process, .trade-spot-form-controller .vue-slider-rail .vue-slider-dot .vue-slider-dot-tooltip-top .vue-slider-dot-tooltip-inner {
+    background: #363841 !important;
+    border-color: #363841 !important;
+}
+.trade-spot-form-controller .vue-slider-dot-handle {
+    background: #000 !important;
+    border: 4px solid #848d9c !important;
+}
+.trade-spot-form-controller .vue-slider-dot-tooltip-top {
+    left: 65% !important;
+}
+.trade-spot-form-controller .vue-slider-dot-handle {
+    position: relative !important;
+    transform: rotate(45deg) !important;
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50% !important;
+    bottom: 16px !important;
+    box-shadow: none !important;
+    left: -5px;
+}
+.trade-spot-form-controller .vue-slider-mark:first-child .vue-slider-mark-step, .trade-spot-form-controller .vue-slider-mark:last-child .vue-slider-mark-step {
+    display: block !important;
+}
+.trade-spot-form-controller .vue-slider-dot-tooltip-inner {
+    position: relative;
+    right: 3px;
+}
+.trade-spot-form-controller .vue-slider, .trade-spot-form-controller .p-inputnumber {
+    width: 100% !important;
+}
+.trade-spot-form-controller .vue-slider-ltr .vue-slider-mark-step, .trade-spot-form-controller .vue-slider-rtl .vue-slider-mark-step {
+    width: 15px;
+    height: 15px;
+    display: block;
+    background-color: #848d9c;
+    transform: rotate(45deg);
+    top: -5px !important;
+    left: -5px !important;
+    border-radius: 50% !important;
+    border: 4px solid #ccc;
+}
+.trade-spot-form-controller .vue-slider:hover .vue-slider-dot-handle:hover, .trade-spot-form-controller .vue-slider-dot-handle {
+    border-color: #848d9c !important;
+}
+.trade-spot-form-controller .vue-slider-mark-step-active {
+    box-shadow: 0 0 0 2px #848d9c !important;
+}
+
+/* spot-coins-controller */
+.spot-coins-controller {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 346px;
+    gap: 0.5rem;
+}
+.spot-coins-controller .bg-line-h {
+    background: #363841;
+}
+.spot-coins-controller .p-input-icon-left {
+    border: 1px solid #363841;
+}
+.spot-coins-controller .p-datatable .p-column-header-content {
+    color: #848d9c !important;
+}
+.spot-coins-controller .p-datatable-tbody {
+	max-height: 420px !important;
+	overflow-y: auto !important;
+}
+.spot-coins-controller .p-datatable .p-datatable-thead > tr > th, .spot-coins-controller .p-datatable .p-datatable-tbody > tr > td {
+    border: none !important;
+    background: transparent !important;
+}
+
+.chart-bar-controller {
+    background: #141823;
+    padding: .5rem .5rem .8rem;
+    width: 100%;
+    border: 1px solid #252834;
+    border-bottom: none !important;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+}
+
+.chart-bar-controller .v-line {
+    width: 2px;
+    height: 20px;
+    position: relative;
+    top: 10%;
+    background: #252834;
+}
+
+
+
+.current-controller {
+    width: 100%;
+    height: 100%;
+}
+.panel-current {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    background: #23242a;
+}
+.panel-current .head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 0.15rem solid #363841;
+    padding-bottom: 1rem;
+}
+.panel-current .head .side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.panel-current .head .side .symbol {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.panel-current .head .side .symbol .column-controller {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.panel-current .head .side .symbol .column-controller .colum {
+    width: 6px;
+    height: 20px;
+    margin-left: 5px;
+    background: #23242a;
+}
+.panel-current .head .side .symbol .column-controller .colum.green {
+    background: #209361;
+}
+.panel-current .head .side .symbol .column-controller .colum.red {
+    background: #b03435;
+}
+.panel-current .head .side .margin-type {
+    padding: 0.5rem;
+    background: #23242a;
+    padding: 0.3rem 1rem 0.1rem;
+    color: #848d9c;
+    border-radius: 5px;
+}
+.panel-current .head .side .position-details button {
+    border-radius: 5px;
+    background: transparent;
+    border: 0.15rem solid #b03435;
+    color: #b03435;
+    padding: 0.3rem 1rem 0.1rem;
+    transition: 0.6s;
+}
+.panel-current .head .side .position-details button:hover {
+    background: #b03435;
+    color: var(--text);
+}
+.panel-current .current-details {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5rem 0 0;
+    overflow-x: hidden;
+}
+.panel-current .current-details .child {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 20%;
+    margin-bottom: 1rem;
+}
+.panel-current .current-details .child span:first-child {
+    width: max-content;
+    color: #848d9c;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    border-bottom: 0.15rem dotted #848d9c;
+}
+.panel-current .current-details .child span:last-child {
+    width: 100%;
+    overflow-x: hidden;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.profile-controller {
+    padding: .5rem;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background: #363841;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.empty-box-controller {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.empty-box-controller img {
+    width: 150px !important;
+    min-height: 140px !important;
+    border-radius: 0 !important;
+    margin-bottom: 1.5rem;
+    position: relative;
+    left: .8rem;
+}
+
+
+.update-tp-sl-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 420px;
+}
+.update-tp-sl-form .head {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.3rem solid var(--dark-border);
+}
+.update-tp-sl-form .head .controller {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+.update-tp-sl-form .head .controller .child {
+    display: flex;
+    flex-direction: column;
+}
+.update-tp-sl-form .head .controller .child:first-child {
+    align-items: flex-start;
+}
+.update-tp-sl-form .head .controller .child:last-child {
+    align-items: flex-end;
+}
+.update-tp-sl-form .head .controller .child .position-type {
+    display: flex;
+    font-weight: bolder;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+    align-items: center;
+}
+.update-tp-sl-form .head .controller .child .title {
+    font-size: 0.8rem;
+    color: var(--gary);
+}
+.update-tp-sl-form .panel-controller {
+    padding: 1rem 0 0;
+    border-bottom: 0.2rem solid var(--dark-border);
+}
+.update-tp-sl-form .panel-controller .header {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+}
+.update-tp-sl-form .panel-controller .header .b-red {
+    border-left: 0.15rem solid var(--red);
+    padding-left: 0.5rem;
+    font-size: 1.1rem;
+    color: var(--red);
+}
+.update-tp-sl-form .panel-controller .header .b-green {
+    border-left: 0.15rem solid var(--green);
+    padding-left: 0.5rem;
+    font-size: 1.1rem;
+    color: var(--green);
+}
+.update-tp-sl-form .panel-controller .header button {
+    padding: 0.4rem 1rem;
+}
+.update-tp-sl-form .panel-controller .controller {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.update-tp-sl-form .panel-controller .controller .amount-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    justify-content: space-between;
+    border: 0.15rem solid var(--dark-border);
+    transition: 0.6s;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+}
+.update-tp-sl-form .panel-controller .controller .amount-box .amount-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding-right: 0;
+    height: 100%;
+    background: var(--card);
+    height: 48px;
+}
+.update-tp-sl-form .panel-controller .controller .amount-box .amount-child:last-child {
+    color: var(--dark-border);
+}
+.update-tp-sl-form .panel-controller .controller .amount-box .amount-child:first-child {
+    flex: 5;
+}
+.update-tp-sl-form .panel-controller .controller ul {
+    padding: 1rem 1rem 0;
+    text-align: left;
+    font-size: 0.9rem;
+    color: var(--gary);
+}
+.update-tp-sl-form .panel-controller .controller ul li::marker {
+    color: var(--green);
+}
+.update-tp-sl-form .panel-controller .controller ul li:last-child p {
+    margin-bottom: 0 !important;
+}
+.p-invalid {
+    border: 0.15rem solid var(--red) !important;
+}
+
+.light .secondary-line-h {
+    background: #f5f7fa !important;
+}
+
+.light .p-datatable .p-datatable-thead > tr > th, .light .p-datatable .p-datatable-tbody > tr > td, .light .p-paginator, .light p-datatable-wrapper {
+    background: #fff !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+}
+
+.light .trade-topBar-component {
+    background: #fff;
+}

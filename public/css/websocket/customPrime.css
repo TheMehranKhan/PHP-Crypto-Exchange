@@ -1,0 +1,105 @@
+.p-inputgroup-addon {
+    background: #1d1e22 !important;
+    border: none !important;
+    outline: none !important;
+}
+.p-dropdown .p-dropdown-label.p-placeholder {
+    justify-content: flex-end;
+}
+.p-component, .p-inputtext {
+    font-family: IRANSansX, Lato !important;
+    font-size: 14px;
+}
+.p-component:enabled:focus, .p-inputtext:enabled:focus {
+    border-color: #eba319;
+    box-shadow: 0 0 0 1px #eba319;
+}
+.p-component:enabled:hover, .p-inputtext:enabled:hover, .p-component:enabled:active, .p-inputtext:enabled:active {
+    border-color: #eba319;
+    outline-color: #eba319;
+}
+.p-inputtext, .p-dropdown  {
+    outline-color: #1d1e22 !important;
+    border: none !important;
+    background: #1d1e22 !important;
+}
+.p-inputtext:focus, .p-dropdown:focus, .p-inputtext:active, .p-dropdown:active {
+    border-color: #eba319 !important;
+    outline-color: #eba319 !important;
+}
+.p-inputtext, .p-dropdown {
+    height: 42px;
+}
+.p-dropdown-label.p-inputtext.p-placeholder {
+    display: flex;
+    align-items: center;
+}
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+    background: #eba319 !important;
+}
+.p-datatable .p-datatable-thead > tr > th, .p-datatable .p-datatable-tbody > tr > td, .p-paginator, p-datatable-wrapper {
+    background: #17181e !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+}
+.p-button {
+    font-size: 0.9rem !important;
+}
+.p-button-plain:hover {
+    color: #fff !important;
+}
+.p-button-text {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+.p-button-text:hover {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+.p-datepicker .p-datepicker-header, .p-datepicker {
+    background: #17181e !important;
+}
+.p-knob-text {
+    color: #fff !important;
+}
+
+.p-dropdown-label.p-inputtext {
+	padding: .7rem !important;
+}
+
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item {
+    background: #23242a ;
+}
+
+.h-0 {
+    height: 0 !important;
+}
+
+.p-menu .p-submenu-header {
+    display: none !important;
+}
+
+
+.p-selectbutton.p-buttonset.p-component {
+    display: flex !important;
+}
+
+.p-buttonset .p-button {
+	font-weight: 600 !important;
+	display: flex;
+	flex: 1;
+    font-size: 1.1rem !important;
+}
+
+.p-selectbutton .p-button {
+    background: #363841 ;
+}
+
+.p-button.p-button-danger {
+    background: #b03435 !important;
+    color: #fff;
+}
