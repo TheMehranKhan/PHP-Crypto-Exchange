@@ -1,4 +1,4 @@
-## Trademen -- The Ultimate Exchange Solutions
+## Crypto Exchange Solutions
 
 #### Admin Features
 * Role Management
